@@ -24,38 +24,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D6793F222CE7BC26006D0ACF /* Stock Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock Portfolio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6793F382CE7BC27006D0ACF /* Stock PortfolioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stock PortfolioTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6793F422CE7BC27006D0ACF /* Stock PortfolioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stock PortfolioUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6793F222CE7BC26006D0ACF /* Stock_Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stock_Portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6793F382CE7BC27006D0ACF /* Stock_PortfolioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Stock_PortfolioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6793F422CE7BC27006D0ACF /* Stock_PortfolioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Stock_PortfolioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D6793F4A2CE7BC27006D0ACF /* Exceptions for "Stock Portfolio" folder in "Stock Portfolio" target */ = {
+		D6793F4A2CE7BC27006D0ACF /* Exceptions for "Stock_Portfolio" folder in "Stock_Portfolio" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = D6793F212CE7BC26006D0ACF /* Stock Portfolio */;
+			target = D6793F212CE7BC26006D0ACF /* Stock_Portfolio */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D6793F242CE7BC26006D0ACF /* Stock Portfolio */ = {
+		D6793F242CE7BC26006D0ACF /* Stock_Portfolio */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				D6793F4A2CE7BC27006D0ACF /* Exceptions for "Stock Portfolio" folder in "Stock Portfolio" target */,
+				D6793F4A2CE7BC27006D0ACF /* Exceptions for "Stock_Portfolio" folder in "Stock_Portfolio" target */,
 			);
-			path = "Stock Portfolio";
+			path = Stock_Portfolio;
 			sourceTree = "<group>";
 		};
-		D6793F3B2CE7BC27006D0ACF /* Stock PortfolioTests */ = {
+		D6793F3B2CE7BC27006D0ACF /* Stock_PortfolioTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Stock PortfolioTests";
+			path = Stock_PortfolioTests;
 			sourceTree = "<group>";
 		};
-		D6793F452CE7BC27006D0ACF /* Stock PortfolioUITests */ = {
+		D6793F452CE7BC27006D0ACF /* Stock_PortfolioUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Stock PortfolioUITests";
+			path = Stock_PortfolioUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -88,9 +88,9 @@
 		D6793F192CE7BC26006D0ACF = {
 			isa = PBXGroup;
 			children = (
-				D6793F242CE7BC26006D0ACF /* Stock Portfolio */,
-				D6793F3B2CE7BC27006D0ACF /* Stock PortfolioTests */,
-				D6793F452CE7BC27006D0ACF /* Stock PortfolioUITests */,
+				D6793F242CE7BC26006D0ACF /* Stock_Portfolio */,
+				D6793F3B2CE7BC27006D0ACF /* Stock_PortfolioTests */,
+				D6793F452CE7BC27006D0ACF /* Stock_PortfolioUITests */,
 				D6793F232CE7BC26006D0ACF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,9 +98,9 @@
 		D6793F232CE7BC26006D0ACF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D6793F222CE7BC26006D0ACF /* Stock Portfolio.app */,
-				D6793F382CE7BC27006D0ACF /* Stock PortfolioTests.xctest */,
-				D6793F422CE7BC27006D0ACF /* Stock PortfolioUITests.xctest */,
+				D6793F222CE7BC26006D0ACF /* Stock_Portfolio.app */,
+				D6793F382CE7BC27006D0ACF /* Stock_PortfolioTests.xctest */,
+				D6793F422CE7BC27006D0ACF /* Stock_PortfolioUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,9 +108,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D6793F212CE7BC26006D0ACF /* Stock Portfolio */ = {
+		D6793F212CE7BC26006D0ACF /* Stock_Portfolio */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6793F4B2CE7BC27006D0ACF /* Build configuration list for PBXNativeTarget "Stock Portfolio" */;
+			buildConfigurationList = D6793F4B2CE7BC27006D0ACF /* Build configuration list for PBXNativeTarget "Stock_Portfolio" */;
 			buildPhases = (
 				D6793F1E2CE7BC26006D0ACF /* Sources */,
 				D6793F1F2CE7BC26006D0ACF /* Frameworks */,
@@ -121,18 +121,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				D6793F242CE7BC26006D0ACF /* Stock Portfolio */,
+				D6793F242CE7BC26006D0ACF /* Stock_Portfolio */,
 			);
-			name = "Stock Portfolio";
+			name = Stock_Portfolio;
 			packageProductDependencies = (
 			);
 			productName = "Stock Portfolio";
-			productReference = D6793F222CE7BC26006D0ACF /* Stock Portfolio.app */;
+			productReference = D6793F222CE7BC26006D0ACF /* Stock_Portfolio.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D6793F372CE7BC27006D0ACF /* Stock PortfolioTests */ = {
+		D6793F372CE7BC27006D0ACF /* Stock_PortfolioTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6793F502CE7BC27006D0ACF /* Build configuration list for PBXNativeTarget "Stock PortfolioTests" */;
+			buildConfigurationList = D6793F502CE7BC27006D0ACF /* Build configuration list for PBXNativeTarget "Stock_PortfolioTests" */;
 			buildPhases = (
 				D6793F342CE7BC27006D0ACF /* Sources */,
 				D6793F352CE7BC27006D0ACF /* Frameworks */,
@@ -144,18 +144,18 @@
 				D6793F3A2CE7BC27006D0ACF /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				D6793F3B2CE7BC27006D0ACF /* Stock PortfolioTests */,
+				D6793F3B2CE7BC27006D0ACF /* Stock_PortfolioTests */,
 			);
-			name = "Stock PortfolioTests";
+			name = Stock_PortfolioTests;
 			packageProductDependencies = (
 			);
 			productName = "Stock PortfolioTests";
-			productReference = D6793F382CE7BC27006D0ACF /* Stock PortfolioTests.xctest */;
+			productReference = D6793F382CE7BC27006D0ACF /* Stock_PortfolioTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D6793F412CE7BC27006D0ACF /* Stock PortfolioUITests */ = {
+		D6793F412CE7BC27006D0ACF /* Stock_PortfolioUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6793F532CE7BC27006D0ACF /* Build configuration list for PBXNativeTarget "Stock PortfolioUITests" */;
+			buildConfigurationList = D6793F532CE7BC27006D0ACF /* Build configuration list for PBXNativeTarget "Stock_PortfolioUITests" */;
 			buildPhases = (
 				D6793F3E2CE7BC27006D0ACF /* Sources */,
 				D6793F3F2CE7BC27006D0ACF /* Frameworks */,
@@ -167,13 +167,13 @@
 				D6793F442CE7BC27006D0ACF /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				D6793F452CE7BC27006D0ACF /* Stock PortfolioUITests */,
+				D6793F452CE7BC27006D0ACF /* Stock_PortfolioUITests */,
 			);
-			name = "Stock PortfolioUITests";
+			name = Stock_PortfolioUITests;
 			packageProductDependencies = (
 			);
 			productName = "Stock PortfolioUITests";
-			productReference = D6793F422CE7BC27006D0ACF /* Stock PortfolioUITests.xctest */;
+			productReference = D6793F422CE7BC27006D0ACF /* Stock_PortfolioUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -199,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D6793F1D2CE7BC26006D0ACF /* Build configuration list for PBXProject "Stock Portfolio" */;
+			buildConfigurationList = D6793F1D2CE7BC26006D0ACF /* Build configuration list for PBXProject "Stock_Portfolio" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -213,9 +213,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D6793F212CE7BC26006D0ACF /* Stock Portfolio */,
-				D6793F372CE7BC27006D0ACF /* Stock PortfolioTests */,
-				D6793F412CE7BC27006D0ACF /* Stock PortfolioUITests */,
+				D6793F212CE7BC26006D0ACF /* Stock_Portfolio */,
+				D6793F372CE7BC27006D0ACF /* Stock_PortfolioTests */,
+				D6793F412CE7BC27006D0ACF /* Stock_PortfolioUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -271,12 +271,12 @@
 /* Begin PBXTargetDependency section */
 		D6793F3A2CE7BC27006D0ACF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D6793F212CE7BC26006D0ACF /* Stock Portfolio */;
+			target = D6793F212CE7BC26006D0ACF /* Stock_Portfolio */;
 			targetProxy = D6793F392CE7BC27006D0ACF /* PBXContainerItemProxy */;
 		};
 		D6793F442CE7BC27006D0ACF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D6793F212CE7BC26006D0ACF /* Stock Portfolio */;
+			target = D6793F212CE7BC26006D0ACF /* Stock_Portfolio */;
 			targetProxy = D6793F432CE7BC27006D0ACF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -291,7 +291,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8N2T75UPQQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Stock Portfolio/Info.plist";
+				INFOPLIST_FILE = Stock_Portfolio/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Stock Portfolio";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -321,7 +321,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8N2T75UPQQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Stock Portfolio/Info.plist";
+				INFOPLIST_FILE = Stock_Portfolio/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Stock Portfolio";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -476,7 +476,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stock Portfolio.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Stock Portfolio";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stock_Portfolio.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Stock_Portfolio";
 			};
 			name = Debug;
 		};
@@ -495,7 +495,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stock Portfolio.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Stock Portfolio";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stock_Portfolio.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Stock_Portfolio";
 			};
 			name = Release;
 		};
@@ -536,7 +536,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D6793F1D2CE7BC26006D0ACF /* Build configuration list for PBXProject "Stock Portfolio" */ = {
+		D6793F1D2CE7BC26006D0ACF /* Build configuration list for PBXProject "Stock_Portfolio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6793F4E2CE7BC27006D0ACF /* Debug */,
@@ -545,7 +545,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D6793F4B2CE7BC27006D0ACF /* Build configuration list for PBXNativeTarget "Stock Portfolio" */ = {
+		D6793F4B2CE7BC27006D0ACF /* Build configuration list for PBXNativeTarget "Stock_Portfolio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6793F4C2CE7BC27006D0ACF /* Debug */,
@@ -554,7 +554,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D6793F502CE7BC27006D0ACF /* Build configuration list for PBXNativeTarget "Stock PortfolioTests" */ = {
+		D6793F502CE7BC27006D0ACF /* Build configuration list for PBXNativeTarget "Stock_PortfolioTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6793F512CE7BC27006D0ACF /* Debug */,
@@ -563,7 +563,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D6793F532CE7BC27006D0ACF /* Build configuration list for PBXNativeTarget "Stock PortfolioUITests" */ = {
+		D6793F532CE7BC27006D0ACF /* Build configuration list for PBXNativeTarget "Stock_PortfolioUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6793F542CE7BC27006D0ACF /* Debug */,
