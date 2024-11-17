@@ -16,10 +16,12 @@ extension Holding {
 
     // Determine the color for the P&L value
     var pnlColor: UIColor {
-        if profitNLoss < 0 {
+        if profitNLoss > 0 {
+            return .green
+        } else if profitNLoss < 0 {
             return .red
         } else {
-            return .green
+            return .black
         }
     }
 
