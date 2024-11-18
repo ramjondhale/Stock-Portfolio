@@ -12,6 +12,7 @@ class HoldingsViewController: UIViewController {
     private let viewModel: HoldingsViewModel
     private let tableView = UITableView()
     private let activityIndicator = UIActivityIndicatorView(style: .large)
+    private let bottomSheetView = BottomSheetView()
 
     // MARK: - Initializer
 
@@ -39,22 +40,34 @@ class HoldingsViewController: UIViewController {
     private func setupUI() {
         view.addSubview(tableView)
         view.addSubview(activityIndicator)
+        view.addSubview(bottomSheetView)
+        view.backgroundColor = .white
 
+        setupConstraints()
+
+        tableView.backgroundColor = .clear
+        tableView.dataSource = self
+        tableView.register(StocksDescriptionView.self, forCellReuseIdentifier: StocksDescriptionView.cellIdentifier)
+    }
+
+    private func setupConstraints() {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        bottomSheetView.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
 
             activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-        ])
+            activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor),
 
-        tableView.dataSource = self
-        tableView.register(StocksDescriptionView.self, forCellReuseIdentifier: StocksDescriptionView.cellIdentifier)
+            bottomSheetView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            bottomSheetView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            bottomSheetView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+        ])
     }
 
     // MARK: - Data Fetching
@@ -64,7 +77,15 @@ class HoldingsViewController: UIViewController {
         await viewModel.fetchHoldings()
         activityIndicator.stopAnimating()
         updateUI()
+        bottomSheetView.configure(
+            currentValue: viewModel.currentValue,
+            totalInvestment: viewModel.totalInvestment,
+            todaysPNL: viewModel.todaysPNL,
+            totalPNL: viewModel.totalPNL
+        )
     }
+
+    // MARK: - Private Helpers
 
     private func updateUI() {
         if let errorMessage = viewModel.errorMessage {
@@ -82,7 +103,6 @@ class HoldingsViewController: UIViewController {
 }
 
 extension HoldingsViewController: UITableViewDataSource {
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.holdingsCount
     }

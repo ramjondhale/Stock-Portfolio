@@ -45,6 +45,7 @@ class StocksDescriptionView: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupSubViews()
+        setupStyle()
     }
 
     required init?(coder: NSCoder) {
@@ -71,6 +72,11 @@ class StocksDescriptionView: UITableViewCell {
         contentView.addSubview(profitAndLossLabel)
 
         setupConstraints()
+    }
+
+    private func setupStyle() {
+        selectionStyle = .none
+        backgroundColor = .clear
     }
 
     private func setupConstraints() {
