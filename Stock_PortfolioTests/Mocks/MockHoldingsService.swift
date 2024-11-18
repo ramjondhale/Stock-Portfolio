@@ -7,6 +7,8 @@
 
 import UIKit
 
+@testable import Stock_Portfolio
+
 class MockHoldingsService: HoldingsServiceProtocol {
     var shouldReturnError = false
     var mockHoldings: [Holding] = []

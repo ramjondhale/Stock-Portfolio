@@ -10,6 +10,7 @@ import XCTest
 @testable import Stock_Portfolio
 
 final class HoldingsViewModelTests: XCTestCase {
+
     var viewModel: HoldingsViewModel!
     var mockService: MockHoldingsService!
 

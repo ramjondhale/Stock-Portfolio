@@ -9,9 +9,17 @@ import UIKit
 
 extension Holding {
 
+    private var totalInvestment: Double {
+        return averagePrice * Double(quantity)
+    }
+
+    private var currentValue: Double {
+        return lastTradedPrice * Double(quantity)
+    }
+
     // Calculate the Profit and Loss (P&L)
     var profitNLoss: Double {
-        return (closePrice - lastTradedPrice) * Double(quantity)
+        return currentValue - totalInvestment
     }
 
     // Determine the color for the P&L value

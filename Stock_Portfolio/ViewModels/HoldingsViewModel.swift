@@ -11,9 +11,9 @@ class HoldingsViewModel {
 
     // MARK: - Properties
 
-    @Published private(set) var portfolio: Portfolio? = nil
-    @Published private(set) var isLoading: Bool = false
-    @Published private(set) var errorMessage: String? = nil
+    private(set) var portfolio: Portfolio? = nil
+    private(set) var isLoading: Bool = false
+    private(set) var errorMessage: String? = nil
 
     private let holdingsService: HoldingsServiceProtocol
 

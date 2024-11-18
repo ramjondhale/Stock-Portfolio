@@ -10,9 +10,10 @@ import UIKit
 class HoldingsViewController: UIViewController {
 
     private let viewModel: HoldingsViewModel
-    private let tableView = UITableView()
-    private let activityIndicator = UIActivityIndicatorView(style: .large)
-    private let bottomSheetView = BottomSheetView()
+
+    let tableView = UITableView()
+    let activityIndicator = UIActivityIndicatorView(style: .large)
+    let bottomSheetView = BottomSheetView()
 
     // MARK: - Initializer
 
@@ -72,7 +73,7 @@ class HoldingsViewController: UIViewController {
 
     // MARK: - Data Fetching
 
-    private func fetchData() async {
+    func fetchData() async {
         activityIndicator.startAnimating()
         await viewModel.fetchHoldings()
         activityIndicator.stopAnimating()

@@ -7,6 +7,8 @@
 
 import UIKit
 
+@testable import Stock_Portfolio
+
 class MockNetworkService: NetworkServiceProtocol {
     var shouldReturnError = false
     var mockData: Data?

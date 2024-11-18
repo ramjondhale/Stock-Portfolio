@@ -32,21 +32,21 @@ class BottomSheetView: UIView {
         return label
     }()
 
-    private let currentAmountLabel: UILabel = {
+    let currentAmountLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 15)
         label.textColor = .black
         return label
     }()
 
-    private let totalInvestmentAmountLabel: UILabel = {
+    let totalInvestmentAmountLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 15)
         label.textColor = .black
         return label
     }()
 
-    private let pnlAmountLabel: UILabel = {
+    let pnlAmountLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 15)
         label.textColor = .black
@@ -62,14 +62,14 @@ class BottomSheetView: UIView {
         return label
     }()
 
-    private let totalPNLAmountLabel: UILabel = {
+    let totalPNLAmountLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 15)
         label.textColor = .black
         return label
     }()
 
-    private let containerStackView: UIStackView = {
+    let containerStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.distribution = .fill
@@ -77,7 +77,7 @@ class BottomSheetView: UIView {
         return stackView
     }()
 
-    private let dividerView: UIView = {
+    let dividerView: UIView = {
         let view = UIView()
         view.backgroundColor = .lightGray
         return view
@@ -186,7 +186,7 @@ class BottomSheetView: UIView {
         pnlStackView.addGestureRecognizer(tapGesture)
     }
 
-    @objc private func handlePnlStackTap() {
+    @objc func handlePnlStackTap() {
         isContainerHidden.toggle()
         UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn) { [weak self] in
             guard let self else { return }

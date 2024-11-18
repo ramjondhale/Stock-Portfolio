@@ -13,28 +13,28 @@ class StocksDescriptionView: UITableViewCell {
 
     // MARK: - Properties
 
-    private let stockNameLabel: UILabel = {
+    let stockNameLabel: UILabel = {
         let label = UILabel()
         label.font = .boldSystemFont(ofSize: 15)
         label.textColor = .black
         return label
     }()
 
-    private let stockQuantityLabel: UILabel = {
+    let stockQuantityLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 15)
         label.textColor = .black
         return label
     }()
 
-    private let lastTradedPriceLabel: UILabel = {
+    let lastTradedPriceLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 15)
         label.textColor = .black
         return label
     }()
 
-    private let profitAndLossLabel: UILabel = {
+    let profitAndLossLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 15)
         label.textColor = .black
