@@ -6,6 +6,31 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D65350292CEC3F1600349FFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65350232CEC3F1600349FFB /* Assets.xcassets */; };
+		D653502B2CEC3F1600349FFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65350262CEC3F1600349FFB /* LaunchScreen.storyboard */; };
+		D653502C2CEC3F1600349FFB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65350122CEC3F1600349FFB /* NetworkService.swift */; };
+		D653502D2CEC3F1600349FFB /* UIColor+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65350132CEC3F1600349FFB /* UIColor+Extention.swift */; };
+		D653502E2CEC3F1600349FFB /* Holding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65350152CEC3F1600349FFB /* Holding.swift */; };
+		D653502F2CEC3F1600349FFB /* Holdings+Formating.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65350162CEC3F1600349FFB /* Holdings+Formating.swift */; };
+		D65350302CEC3F1600349FFB /* HoldingsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65350172CEC3F1600349FFB /* HoldingsResponse.swift */; };
+		D65350312CEC3F1600349FFB /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65350182CEC3F1600349FFB /* Portfolio.swift */; };
+		D65350322CEC3F1600349FFB /* HoldingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653501A2CEC3F1600349FFB /* HoldingsService.swift */; };
+		D65350332CEC3F1600349FFB /* HoldingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653501C2CEC3F1600349FFB /* HoldingsViewModel.swift */; };
+		D65350342CEC3F1600349FFB /* HoldingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653501E2CEC3F1600349FFB /* HoldingsViewController.swift */; };
+		D65350352CEC3F1600349FFB /* PortfolioSummaryBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653501F2CEC3F1600349FFB /* PortfolioSummaryBottomSheetView.swift */; };
+		D65350362CEC3F1600349FFB /* StocksDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65350202CEC3F1600349FFB /* StocksDescriptionTableViewCell.swift */; };
+		D65350372CEC3F1600349FFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65350222CEC3F1600349FFB /* AppDelegate.swift */; };
+		D65350382CEC3F1600349FFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65350272CEC3F1600349FFB /* SceneDelegate.swift */; };
+		D65350422CEC3F1B00349FFB /* MockHoldingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65350392CEC3F1B00349FFB /* MockHoldingsService.swift */; };
+		D65350432CEC3F1B00349FFB /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653503A2CEC3F1B00349FFB /* MockNetworkService.swift */; };
+		D65350442CEC3F1B00349FFB /* BottomSheetViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653503C2CEC3F1B00349FFB /* BottomSheetViewTests.swift */; };
+		D65350452CEC3F1B00349FFB /* HoldingsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653503D2CEC3F1B00349FFB /* HoldingsServiceTests.swift */; };
+		D65350462CEC3F1B00349FFB /* HoldingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653503E2CEC3F1B00349FFB /* HoldingsViewModelTests.swift */; };
+		D65350472CEC3F1B00349FFB /* HoldingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653503F2CEC3F1B00349FFB /* HoldingTests.swift */; };
+		D65350482CEC3F1B00349FFB /* StocksDescriptionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65350402CEC3F1B00349FFB /* StocksDescriptionViewTests.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D6793F392CE7BC27006D0ACF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -17,35 +42,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D65350122CEC3F1600349FFB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D65350132CEC3F1600349FFB /* UIColor+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extention.swift"; sourceTree = "<group>"; };
+		D65350152CEC3F1600349FFB /* Holding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holding.swift; sourceTree = "<group>"; };
+		D65350162CEC3F1600349FFB /* Holdings+Formating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Holdings+Formating.swift"; sourceTree = "<group>"; };
+		D65350172CEC3F1600349FFB /* HoldingsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingsResponse.swift; sourceTree = "<group>"; };
+		D65350182CEC3F1600349FFB /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
+		D653501A2CEC3F1600349FFB /* HoldingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingsService.swift; sourceTree = "<group>"; };
+		D653501C2CEC3F1600349FFB /* HoldingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingsViewModel.swift; sourceTree = "<group>"; };
+		D653501E2CEC3F1600349FFB /* HoldingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingsViewController.swift; sourceTree = "<group>"; };
+		D653501F2CEC3F1600349FFB /* PortfolioSummaryBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioSummaryBottomSheetView.swift; sourceTree = "<group>"; };
+		D65350202CEC3F1600349FFB /* StocksDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		D65350222CEC3F1600349FFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D65350232CEC3F1600349FFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D65350242CEC3F1600349FFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D65350252CEC3F1600349FFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D65350272CEC3F1600349FFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D65350392CEC3F1B00349FFB /* MockHoldingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHoldingsService.swift; sourceTree = "<group>"; };
+		D653503A2CEC3F1B00349FFB /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		D653503C2CEC3F1B00349FFB /* BottomSheetViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewTests.swift; sourceTree = "<group>"; };
+		D653503D2CEC3F1B00349FFB /* HoldingsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingsServiceTests.swift; sourceTree = "<group>"; };
+		D653503E2CEC3F1B00349FFB /* HoldingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingsViewModelTests.swift; sourceTree = "<group>"; };
+		D653503F2CEC3F1B00349FFB /* HoldingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingTests.swift; sourceTree = "<group>"; };
+		D65350402CEC3F1B00349FFB /* StocksDescriptionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksDescriptionViewTests.swift; sourceTree = "<group>"; };
 		D6793F222CE7BC26006D0ACF /* Stock_Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stock_Portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6793F382CE7BC27006D0ACF /* Stock_PortfolioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Stock_PortfolioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D6793F4A2CE7BC27006D0ACF /* Exceptions for "Stock_Portfolio" folder in "Stock_Portfolio" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = D6793F212CE7BC26006D0ACF /* Stock_Portfolio */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		D6793F242CE7BC26006D0ACF /* Stock_Portfolio */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				D6793F4A2CE7BC27006D0ACF /* Exceptions for "Stock_Portfolio" folder in "Stock_Portfolio" target */,
-			);
-			path = Stock_Portfolio;
-			sourceTree = "<group>";
-		};
-		D6793F3B2CE7BC27006D0ACF /* Stock_PortfolioTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Stock_PortfolioTests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D6793F1F2CE7BC26006D0ACF /* Frameworks */ = {
@@ -65,11 +87,96 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D65350142CEC3F1600349FFB /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				D65350122CEC3F1600349FFB /* NetworkService.swift */,
+				D65350132CEC3F1600349FFB /* UIColor+Extention.swift */,
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
+		D65350192CEC3F1600349FFB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D65350152CEC3F1600349FFB /* Holding.swift */,
+				D65350162CEC3F1600349FFB /* Holdings+Formating.swift */,
+				D65350172CEC3F1600349FFB /* HoldingsResponse.swift */,
+				D65350182CEC3F1600349FFB /* Portfolio.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D653501B2CEC3F1600349FFB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D653501A2CEC3F1600349FFB /* HoldingsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D653501D2CEC3F1600349FFB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D653501C2CEC3F1600349FFB /* HoldingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D65350212CEC3F1600349FFB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D653501E2CEC3F1600349FFB /* HoldingsViewController.swift */,
+				D653501F2CEC3F1600349FFB /* PortfolioSummaryBottomSheetView.swift */,
+				D65350202CEC3F1600349FFB /* StocksDescriptionTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D65350282CEC3F1600349FFB /* Stock_Portfolio */ = {
+			isa = PBXGroup;
+			children = (
+				D65350142CEC3F1600349FFB /* Infra */,
+				D65350192CEC3F1600349FFB /* Models */,
+				D653501B2CEC3F1600349FFB /* Services */,
+				D653501D2CEC3F1600349FFB /* ViewModels */,
+				D65350212CEC3F1600349FFB /* Views */,
+				D65350222CEC3F1600349FFB /* AppDelegate.swift */,
+				D65350272CEC3F1600349FFB /* SceneDelegate.swift */,
+				D65350232CEC3F1600349FFB /* Assets.xcassets */,
+				D65350242CEC3F1600349FFB /* Info.plist */,
+				D65350262CEC3F1600349FFB /* LaunchScreen.storyboard */,
+			);
+			path = Stock_Portfolio;
+			sourceTree = "<group>";
+		};
+		D653503B2CEC3F1B00349FFB /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				D65350392CEC3F1B00349FFB /* MockHoldingsService.swift */,
+				D653503A2CEC3F1B00349FFB /* MockNetworkService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		D65350412CEC3F1B00349FFB /* Stock_PortfolioTests */ = {
+			isa = PBXGroup;
+			children = (
+				D653503B2CEC3F1B00349FFB /* Mocks */,
+				D653503C2CEC3F1B00349FFB /* BottomSheetViewTests.swift */,
+				D653503D2CEC3F1B00349FFB /* HoldingsServiceTests.swift */,
+				D653503E2CEC3F1B00349FFB /* HoldingsViewModelTests.swift */,
+				D653503F2CEC3F1B00349FFB /* HoldingTests.swift */,
+				D65350402CEC3F1B00349FFB /* StocksDescriptionViewTests.swift */,
+			);
+			path = Stock_PortfolioTests;
+			sourceTree = "<group>";
+		};
 		D6793F192CE7BC26006D0ACF = {
 			isa = PBXGroup;
 			children = (
-				D6793F242CE7BC26006D0ACF /* Stock_Portfolio */,
-				D6793F3B2CE7BC27006D0ACF /* Stock_PortfolioTests */,
+				D65350282CEC3F1600349FFB /* Stock_Portfolio */,
+				D65350412CEC3F1B00349FFB /* Stock_PortfolioTests */,
 				D6793F232CE7BC26006D0ACF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,9 +205,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				D6793F242CE7BC26006D0ACF /* Stock_Portfolio */,
-			);
 			name = Stock_Portfolio;
 			packageProductDependencies = (
 			);
@@ -120,9 +224,6 @@
 			);
 			dependencies = (
 				D6793F3A2CE7BC27006D0ACF /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D6793F3B2CE7BC27006D0ACF /* Stock_PortfolioTests */,
 			);
 			name = Stock_PortfolioTests;
 			packageProductDependencies = (
@@ -175,6 +276,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D65350292CEC3F1600349FFB /* Assets.xcassets in Resources */,
+				D653502B2CEC3F1600349FFB /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +295,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D653502C2CEC3F1600349FFB /* NetworkService.swift in Sources */,
+				D653502D2CEC3F1600349FFB /* UIColor+Extention.swift in Sources */,
+				D653502E2CEC3F1600349FFB /* Holding.swift in Sources */,
+				D653502F2CEC3F1600349FFB /* Holdings+Formating.swift in Sources */,
+				D65350302CEC3F1600349FFB /* HoldingsResponse.swift in Sources */,
+				D65350312CEC3F1600349FFB /* Portfolio.swift in Sources */,
+				D65350322CEC3F1600349FFB /* HoldingsService.swift in Sources */,
+				D65350332CEC3F1600349FFB /* HoldingsViewModel.swift in Sources */,
+				D65350342CEC3F1600349FFB /* HoldingsViewController.swift in Sources */,
+				D65350352CEC3F1600349FFB /* PortfolioSummaryBottomSheetView.swift in Sources */,
+				D65350362CEC3F1600349FFB /* StocksDescriptionTableViewCell.swift in Sources */,
+				D65350372CEC3F1600349FFB /* AppDelegate.swift in Sources */,
+				D65350382CEC3F1600349FFB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +315,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D65350422CEC3F1B00349FFB /* MockHoldingsService.swift in Sources */,
+				D65350432CEC3F1B00349FFB /* MockNetworkService.swift in Sources */,
+				D65350442CEC3F1B00349FFB /* BottomSheetViewTests.swift in Sources */,
+				D65350452CEC3F1B00349FFB /* HoldingsServiceTests.swift in Sources */,
+				D65350462CEC3F1B00349FFB /* HoldingsViewModelTests.swift in Sources */,
+				D65350472CEC3F1B00349FFB /* HoldingTests.swift in Sources */,
+				D65350482CEC3F1B00349FFB /* StocksDescriptionViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +334,17 @@
 			targetProxy = D6793F392CE7BC27006D0ACF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D65350262CEC3F1600349FFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D65350252CEC3F1600349FFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D6793F4C2CE7BC27006D0ACF /* Debug */ = {
