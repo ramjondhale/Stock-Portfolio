@@ -43,6 +43,7 @@ class HoldingsViewController: UIViewController {
         view.addSubview(activityIndicator)
         view.addSubview(bottomSheetView)
         view.backgroundColor = .white
+        bottomSheetView.isHidden = true
 
         setupConstraints()
 
@@ -78,12 +79,6 @@ class HoldingsViewController: UIViewController {
         await viewModel.fetchHoldings()
         activityIndicator.stopAnimating()
         updateUI()
-        bottomSheetView.configure(
-            currentValue: viewModel.currentValue,
-            totalInvestment: viewModel.totalInvestment,
-            todaysPNL: viewModel.todaysPNL,
-            totalPNL: viewModel.totalPNL
-        )
     }
 
     // MARK: - Private Helpers
@@ -93,6 +88,13 @@ class HoldingsViewController: UIViewController {
             showErrorAlert(message: errorMessage)
         } else {
             tableView.reloadData()
+            bottomSheetView.configure(
+                currentValue: viewModel.currentValue,
+                totalInvestment: viewModel.totalInvestment,
+                todaysPNL: viewModel.todaysPNL,
+                totalPNL: viewModel.totalPNL
+            )
+            bottomSheetView.isHidden = false
         }
     }
 
