@@ -188,8 +188,9 @@ class PortfolioSummaryBottomSheetView: UIView {
 
     @objc func handlePnlStackTap() {
         isContainerHidden.toggle()
-        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn) { [weak self] in
+        UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseIn) { [weak self] in
             guard let self else { return }
+            containerStackView.layer.opacity = isContainerHidden ? 0 : 1
             containerStackView.isHidden = isContainerHidden
             dividerView.isHidden = isContainerHidden
         }

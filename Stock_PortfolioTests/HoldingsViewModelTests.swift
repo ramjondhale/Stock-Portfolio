@@ -71,7 +71,6 @@ final class HoldingsViewModelTests: XCTestCase {
             Holding(symbol: "INFOSYS", quantity: 121, averagePrice: 1245.45, lastTradedPrice: 1305, closePrice: 1103.85)
         ]
 
-
         await viewModel.fetchHoldings()
 
         XCTAssertEqual(viewModel.currentValue, "185305.00", "Current value should be calculated correctly")

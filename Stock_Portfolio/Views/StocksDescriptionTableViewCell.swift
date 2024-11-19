@@ -42,6 +42,12 @@ class StocksDescriptionTableViewCell: UITableViewCell {
         return label
     }()
 
+    let dividerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .lightGray
+        return view
+    }()
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupSubViews()
@@ -70,6 +76,7 @@ class StocksDescriptionTableViewCell: UITableViewCell {
         contentView.addSubview(stockQuantityLabel)
         contentView.addSubview(lastTradedPriceLabel)
         contentView.addSubview(profitAndLossLabel)
+        contentView.addSubview(dividerView)
 
         setupConstraints()
     }
@@ -84,22 +91,29 @@ class StocksDescriptionTableViewCell: UITableViewCell {
         stockQuantityLabel.translatesAutoresizingMaskIntoConstraints = false
         lastTradedPriceLabel.translatesAutoresizingMaskIntoConstraints = false
         profitAndLossLabel.translatesAutoresizingMaskIntoConstraints = false
+        dividerView.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
             stockNameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-            stockNameLabel.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 20),
+            stockNameLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20),
 
             stockQuantityLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
             stockQuantityLabel.topAnchor.constraint(equalTo: stockNameLabel.bottomAnchor, constant: 20),
-            stockQuantityLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20),
+            stockQuantityLabel.bottomAnchor.constraint(equalTo: dividerView.bottomAnchor, constant: -20),
 
             lastTradedPriceLabel.leadingAnchor.constraint(greaterThanOrEqualTo:  stockNameLabel.trailingAnchor, constant: 20),
-            lastTradedPriceLabel.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 20),
+            lastTradedPriceLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20),
             lastTradedPriceLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
 
             profitAndLossLabel.leadingAnchor.constraint(greaterThanOrEqualTo: stockQuantityLabel.trailingAnchor, constant: 20),
             profitAndLossLabel.topAnchor.constraint(equalTo: lastTradedPriceLabel.bottomAnchor, constant: 20),
-            profitAndLossLabel.trailingAnchor.constraint(equalTo: lastTradedPriceLabel.trailingAnchor)
+            profitAndLossLabel.trailingAnchor.constraint(equalTo: lastTradedPriceLabel.trailingAnchor),
+            profitAndLossLabel.bottomAnchor.constraint(equalTo: dividerView.bottomAnchor, constant: -20),
+
+            dividerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
+            dividerView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
+            dividerView.heightAnchor.constraint(equalToConstant: 1),
+            dividerView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
     }
 

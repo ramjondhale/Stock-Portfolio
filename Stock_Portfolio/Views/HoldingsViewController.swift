@@ -48,6 +48,7 @@ class HoldingsViewController: UIViewController {
         setupConstraints()
 
         tableView.backgroundColor = .clear
+        tableView.separatorStyle = .none
         tableView.dataSource = self
         tableView.register(StocksDescriptionTableViewCell.self, forCellReuseIdentifier: StocksDescriptionTableViewCell.cellIdentifier)
     }
