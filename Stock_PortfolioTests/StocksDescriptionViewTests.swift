@@ -11,11 +11,11 @@ import XCTest
 
 final class StocksDescriptionViewTests: XCTestCase {
 
-    var stocksDescriptionView: StocksDescriptionView!
+    var stocksDescriptionView: StocksDescriptionTableViewCell!
 
     override func setUp() {
         super.setUp()
-        stocksDescriptionView = StocksDescriptionView(style: .default, reuseIdentifier: StocksDescriptionView.cellIdentifier)
+        stocksDescriptionView = StocksDescriptionTableViewCell(style: .default, reuseIdentifier: StocksDescriptionTableViewCell.cellIdentifier)
     }
 
     override func tearDown() {

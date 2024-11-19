@@ -1,5 +1,5 @@
 //
-//  BottomSheetView.swift
+//  PortfolioSummaryBottomSheetView.swift
 //  Stock_Portfolio
 //
 //  Created by Ram Jondhale on 17/11/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BottomSheetView: UIView {
+class PortfolioSummaryBottomSheetView: UIView {
 
     // MARK: - Properties
 

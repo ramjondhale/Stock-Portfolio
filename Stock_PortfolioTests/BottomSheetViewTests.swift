@@ -11,11 +11,11 @@ import XCTest
 
 final class BottomSheetViewTests: XCTestCase {
 
-    var bottomSheetView: BottomSheetView!
+    var bottomSheetView: PortfolioSummaryBottomSheetView!
 
     override func setUp() {
         super.setUp()
-        bottomSheetView = BottomSheetView(frame: .zero)
+        bottomSheetView = PortfolioSummaryBottomSheetView(frame: .zero)
     }
 
     override func tearDown() {

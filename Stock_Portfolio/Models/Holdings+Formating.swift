@@ -17,12 +17,10 @@ extension Holding {
         return lastTradedPrice * Double(quantity)
     }
 
-    // Calculate the Profit and Loss (P&L)
     var profitNLoss: Double {
         return currentValue - totalInvestment
     }
 
-    // Determine the color for the P&L value
     var pnlColor: UIColor {
         return UIColor.getPNLColor(pnlValue: profitNLoss)
     }

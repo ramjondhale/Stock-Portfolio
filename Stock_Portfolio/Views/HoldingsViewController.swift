@@ -13,7 +13,7 @@ class HoldingsViewController: UIViewController {
 
     let tableView = UITableView()
     let activityIndicator = UIActivityIndicatorView(style: .large)
-    let bottomSheetView = BottomSheetView()
+    let bottomSheetView = PortfolioSummaryBottomSheetView()
 
     // MARK: - Initializer
 
@@ -48,7 +48,7 @@ class HoldingsViewController: UIViewController {
 
         tableView.backgroundColor = .clear
         tableView.dataSource = self
-        tableView.register(StocksDescriptionView.self, forCellReuseIdentifier: StocksDescriptionView.cellIdentifier)
+        tableView.register(StocksDescriptionTableViewCell.self, forCellReuseIdentifier: StocksDescriptionTableViewCell.cellIdentifier)
     }
 
     private func setupConstraints() {
@@ -109,7 +109,7 @@ extension HoldingsViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: StocksDescriptionView.cellIdentifier, for: indexPath) as! StocksDescriptionView
+        let cell = tableView.dequeueReusableCell(withIdentifier: StocksDescriptionTableViewCell.cellIdentifier, for: indexPath) as! StocksDescriptionTableViewCell
         if let holding = viewModel.holding(at: indexPath.row) {
             cell.configure(with: holding)
         }

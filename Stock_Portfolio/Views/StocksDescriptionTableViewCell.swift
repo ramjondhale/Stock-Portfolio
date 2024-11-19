@@ -1,5 +1,5 @@
 //
-//  StocksDescriptionView.swift
+//  StocksDescriptionTableViewCell.swift
 //  Stock_Portfolio
 //
 //  Created by Ram Jondhale on 17/11/24.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-class StocksDescriptionView: UITableViewCell {
+class StocksDescriptionTableViewCell: UITableViewCell {
 
-    static let cellIdentifier = "StocksDescriptionView"
+    static let cellIdentifier = "StocksDescriptionTableViewCell"
 
     // MARK: - Properties
 
@@ -86,21 +86,17 @@ class StocksDescriptionView: UITableViewCell {
         profitAndLossLabel.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
-            // Stock Name Label Constraints
             stockNameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
             stockNameLabel.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 20),
 
-            // Stock Quantity Label Constraints
             stockQuantityLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
             stockQuantityLabel.topAnchor.constraint(equalTo: stockNameLabel.bottomAnchor, constant: 20),
             stockQuantityLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20),
 
-            // Last Traded Price Label Constraints
             lastTradedPriceLabel.leadingAnchor.constraint(greaterThanOrEqualTo:  stockNameLabel.trailingAnchor, constant: 20),
             lastTradedPriceLabel.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 20),
             lastTradedPriceLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
 
-            // Profit and Loss Label Constraints
             profitAndLossLabel.leadingAnchor.constraint(greaterThanOrEqualTo: stockQuantityLabel.trailingAnchor, constant: 20),
             profitAndLossLabel.topAnchor.constraint(equalTo: lastTradedPriceLabel.bottomAnchor, constant: 20),
             profitAndLossLabel.trailingAnchor.constraint(equalTo: lastTradedPriceLabel.trailingAnchor)
