@@ -1,0 +1,28 @@
+# This script defines a GitHub Actions workflow that is triggered when a pull request is made to the `dev` branch, or when manually dispatched.
+# This workflow will build and test the iOS project
+name: iOS CI/CD
+run-name: iOS build and test by @${{ github.actor }}
+
+on:
+  workflow_dispatch:  # Manual trigger
+  pull_request:
+    branches: [ "main", "develop" ]  # Trigger on PRs to main or develop branches
+
+jobs:
+  build-and-test:
+    name: Build and Test
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Select Xcode
+      run: sudo xcode-select -switch /Applications/Xcode.app
+
+    - name: Build and Test
+      run: |
+        xcodebuild clean test \
+          -project Stock_Portfolio.xcodeproj \
+          -scheme Stock_Portfolio \
+          -sdk iphonesimulator \
+          -destination 'platform=iOS Simulator,name=iPhone 15'
