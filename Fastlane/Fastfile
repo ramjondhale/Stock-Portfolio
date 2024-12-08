@@ -16,7 +16,7 @@ platform :ios do
     # to the value of the APPLE_SPECIAL_PASS variable
     ENV["FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD"] = "#{APPLE_SPECIAL_PASS}"
     # Set the ITMSTRANSPORTER_FORCE_ITMS_PACKAGE_UPLOAD environment variable to 'true'
-    ENV['ITMSTRANSPORTER_FORCE_ITMS_PACKAGE_UPLOAD'] = 'true'
+    # ENV['ITMSTRANSPORTER_FORCE_ITMS_PACKAGE_UPLOAD'] = 'true'
   end
 
   # Define a lane called 'prod'
