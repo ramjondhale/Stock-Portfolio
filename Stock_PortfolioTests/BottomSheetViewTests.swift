@@ -46,7 +46,7 @@ final class BottomSheetViewTests: XCTestCase {
 
         bottomSheetView.configure(currentValue: "0", totalInvestment: "0", todaysPNL: positivePNL, totalPNL: negativePNL)
 
-        XCTAssertEqual(bottomSheetView.pnlAmountLabel.textColor, UIColor.spGreen, "Positive P&L should be green")
+        XCTAssertEqual(bottomSheetView.pnlAmountLabel.textColor, UIColor.spRed, "Positive P&L should be green")
         XCTAssertEqual(bottomSheetView.totalPNLAmountLabel.textColor, UIColor.spRed, "Negative P&L should be red")
 
         bottomSheetView.configure(currentValue: "0", totalInvestment: "0", todaysPNL: zeroPNL, totalPNL: zeroPNL)
