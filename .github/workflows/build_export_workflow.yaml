@@ -22,6 +22,8 @@ jobs:
           DECRYPTION_PASS_PROFILE: '${{ secrets.DECRYPTION_PASS_PROFILE }}'
           KEYCHAIN_EXPORT: '${{ secrets.KEYCHAIN_EXPORT }}'
         run: |
+          # Make the script executable
+          chmod +x ./.github/scripts/set_certificates.sh
           # add a distribution certificate to the keychain
           ./.github/scripts/set_certificates.sh
 
